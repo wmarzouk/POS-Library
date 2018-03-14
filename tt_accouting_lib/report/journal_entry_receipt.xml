@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+            string="Print Journal Entry"
+            id="action_journal_entry_print"
+            model="account.move"
+            report_type="qweb-pdf"
+            name="tt_accouting_lib.journal_entry_receipt"
+            file="tt_accouting_lib.journal_entry_receipt"
+    />
+
+    <template id="tt_accouting_lib.journal_entry_receipt_document">
+        <t t-foreach="docs" t-as="o">
+
+            <t t-call="report.external_layout">
+                <div class="page">
+                     <h4>
+                        <span t-field="o.partner_id.lang"/>
+                    </h4>
+
+                    <h3>
+                        <span t-field="o.name"/>
+                    </h3>
+
+                    <div class="row">
+                        <div class="col-xs-6 pull-left">
+                            <t t-set="vcredit" t-value="0"/>
+                            <t t-set="vdebit" t-value="0"/>
+                            <table class="table table-condensed">
+                                <tr class="border-black">
+                                    <td>
+                                        <strong>Journal :</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="o.journal_id"/>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-black">
+                                    <td>
+                                        <strong>Reference :</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="o.ref"/>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-black">
+                                    <td>
+                                        <strong>Date :</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="o.date"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Account</th>
+                                <th>Partner</th>
+                                <th>Label</th>
+                                <th>Analytic Account</th>
+                                <th>Debit</th>
+                                <th>Credit</th>
+                                <th>Amount Currency</th>
+                                <th>Currency</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr t-foreach="o.line_ids" t-as="l">
+                                <td style="width:20%">
+                                    <span t-field="l.account_id"/>
+
+                                </td>
+                                <td style="width:10%">
+                                    <span t-field="l.partner_id"/>
+
+                                </td>
+                                <td style="width:20%">
+                                    <span t-field="l.name"/>
+
+                                </td>
+                                <td style="width:10%">
+                                    <span t-field="l.analytic_account_id"/>
+
+                                </td>
+                                <td style="width:10%">
+                                    <span t-field="l.debit"/>
+                                </td>
+
+                                <td style="width:10%">
+                                    <span t-field="l.credit"/>
+                                </td>
+
+
+                                <td style="width:10%">
+                                    <span t-field="l.amount_currency"/>
+
+                                </td>
+                                <td style="width:10%">
+                                    <span t-field="l.currency_id"/>
+
+                                </td>
+                                <t t-set="vcredit" t-value="vcredit+l.credit"/>
+                                <t t-set="vdebit" t-value="vdebit+l.debit"/>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="row">
+                        <div class="col-xs-12 pull-right">
+                            <table class="table table-condensed">
+                                <tr class="border-black">
+                                    <td style="width:20%">
+                                        <strong>Total :</strong>
+                                    </td>
+                                    <td style="width:10%">
+
+                                    </td>
+                                    <td style="width:20%">
+
+                                    </td>
+                                    <td style="width:10%">
+
+                                    </td>
+
+                                    <td style="width:10%">
+                                        <h4>
+                                            <t t-esc="vcredit"/>
+                                        </h4>
+
+                                    </td>
+                                    <td style="width:10%">
+
+                                        <h4>
+                                            <t t-esc="vdebit"/>
+                                        </h4>
+                                    </td>
+                                    <td style="width:10%">
+                                    </td>
+                                    <td style="width:10%">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="cols-sm-10">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Internal Note</div>
+                            <div class="panel-body">
+                                <span t-field="o.narration"/>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </t>
+        </t>
+
+
+    </template>
+
+
+    <template id="tt_accouting_lib.journal_entry_receipt">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="tt_accouting_lib.journal_entry_receipt_document" t-lang="doc.partner_id.lang"/>
+            </t>
+        </t>
+    </template>
+
+</odoo>

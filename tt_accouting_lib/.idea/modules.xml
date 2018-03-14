@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/tt_accouting_lib.iml" filepath="$PROJECT_DIR$/.idea/tt_accouting_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tt_journal_report/.idea/tt_journal_report.iml" filepath="$PROJECT_DIR$/../tt_journal_report/.idea/tt_journal_report.iml" />
+    </modules>
+  </component>
+</project>

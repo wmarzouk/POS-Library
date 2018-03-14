@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+
+    <record id="level_report_balance_view" model="ir.ui.view">
+        <field name="name">Level Trial Balance</field>
+        <field name="model">account.level.balance.report</field>
+        <field name="inherit_id" ref="account.account_common_report_view"/>
+        <field name="arch" type="xml">
+            <data>
+                <field name="journal_ids" position="replace"/>
+                <xpath expr="//field[@name='target_move']" position="after">
+                    <field name="display_account" widget="radio"/>
+                    <newline/>
+                </xpath>
+            </data>
+        </field>
+    </record>
+
+
+    <record id="action_level_balance_menu" model="ir.actions.act_window">
+        <field name="name">Level Trial Balance</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">account.level.balance.report</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="level_report_balance_view"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_level_Balance_report"
+        name="Level Trial Balance"
+        parent="account.menu_finance_reports"
+        action="action_level_balance_menu"/>
+
+</odoo>

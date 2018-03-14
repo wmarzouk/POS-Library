@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+ <record id="action_account_report_jebal" model="ir.actions.act_window">
+        <field name="name">Balance Sheet Jebal</field>
+        <field name="res_model">accounting.report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="account.accounting_report_view"/>
+        <field name="target">new</field>
+        <field name="context" eval="{'default_account_report_id':ref('account.account_financial_report_balancesheet0')}"/>
+    </record>
+
+    <menuitem id="menu_account_report_jebal" name="Balance Sheet Jebal" action="action_account_report_jebal" parent="account.menu_finance_legal_statement"/>
+
+
+
+    </odoo>

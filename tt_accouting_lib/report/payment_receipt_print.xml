@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report
+            string="Payment Receipt Print"
+            id="action_payment_receipt_print"
+            model="account.payment"
+            report_type="qweb-pdf"
+            name="tt_accouting_lib.payment_receipt_print"
+            file="tt_accouting_lib.payment_receipt_print"
+    />
+    <template id="tt_accouting_lib.payment_receipt_print_document">
+        <t t-foreach="docs" t-as="o">
+
+            <t t-call="report.external_layout">
+
+
+                <div class="page">
+
+                    <h3>
+
+                        <span t-if="o.payment_type == 'inbound'">Money Receiving Receipt :</span>
+                        <span t-if="o.payment_type == 'outbound'">Money Payment Receipt :</span>
+                        <span t-field="o.name"/>
+                    </h3>
+
+                    <br></br>
+
+
+                    <div class="row">
+                        <div class="col-xs-6 pull-left">
+                            <table class="table table-condensed">
+                                <tr class="border-white">
+                                    <td>
+                                        <span t-if="o.payment_type == 'inbound'">
+                                            <strong>Customer :</strong>
+                                        </span>
+                                        <span t-if="o.payment_type == 'outbound'">
+                                            <strong>Supplier :</strong>
+                                        </span>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="o.partner_id"/>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-white">
+                                    <td>
+                                        <strong>Payment Date :</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="o.payment_date"/>
+                                    </td>
+                                </tr>
+
+                                <tr class="border-white">
+                                    <td>
+                                        <strong>Amount :</strong>
+                                    </td>
+                                    <td class="text-right">
+
+                                        <span t-field="o.amount"/>
+                                        <span t-field="o.currency_id"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <p></p>
+                    <p></p>
+                    <p>
+                        <span t-if="o.payment_type == 'inbound'">
+                            <strong>
+                                We
+                                <span t-field="o.company_id"/>
+                                hereby acknowledge receiving value of
+                                <span t-field="o.amount"/>
+                                <span t-field="o.currency_id"/>
+                                from
+                                <span t-field="o.partner_id"/>
+                                as
+                                payment.
+                            </strong>
+                        </span>
+                        <span t-if="o.payment_type == 'outbound'">
+                            <strong>
+                                As representative of<span t-field="o.partner_id"/>, I hereby achnowlege receiving
+                                the
+                                value
+                                <span t-field="o.amount"/>
+                                <span t-field="o.currency_id"/>
+                                from
+                                <span t-field="o.company_id"/>
+                            </strong>
+                        </span>
+                    </p>
+                    <br></br>
+                    <br></br>
+
+                    <div class="row">
+                        <div class="col-xs-4 pull-right">
+                            <table style="height:110px">
+                                <tr>
+                                    <td>
+                                        <strong>Name :</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        -------------------------
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>ID :</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        -------------------------
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Signature :</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        -------------------------
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+            </t>
+        </t>
+
+    </template>
+
+
+    <template id="tt_accouting_lib.payment_receipt_print">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="tt_accouting_lib.payment_receipt_print_document" t-lang="doc.partner_id.lang"/>
+            </t>
+        </t>
+    </template>
+
+
+</odoo>

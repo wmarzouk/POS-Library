@@ -1,0 +1,589 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* tt_accouting_lib
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0e+e-20180129\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-05 15:07+0000\n"
+"PO-Revision-Date: 2018-03-05 15:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid ", I hereby achnowlege receiving\n"
+"                                the\n"
+"                                value"
+msgstr "انا اقر باستلام\n"
+"                                \n"
+"                                قيمة"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "<strong>Amount :</strong>"
+msgstr "<strong>المبلغ :</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "<strong>Customer :</strong>"
+msgstr "<strong>العميل :</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "<strong>Date :</strong>"
+msgstr "<strong>: التاريخ</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "<strong>ID :</strong>"
+msgstr "<strong> :الرقم الوظيفي</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "<strong>Journal :</strong>"
+msgstr "<strong>: اليومية </strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "<strong>Name :</strong>"
+msgstr "<strong> :الاسم</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "<strong>Payment Date :</strong>"
+msgstr "<strong>: تاريخ الدفع</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "<strong>Reference :</strong>"
+msgstr "<strong>: المرجع</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "<strong>Signature :</strong>"
+msgstr "<strong>: التوقيع</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "<strong>Supplier :</strong>"
+msgstr "<strong>: المورد</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "<strong>Total :</strong>"
+msgstr "<strong>: المجموع</strong>"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_account_account
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_payment_account_id
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_form
+msgid "Account"
+msgstr "حساب"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_accounting_report
+msgid "Accounting Report"
+msgstr "تقرير محاسبي"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_amount
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_tree
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_tree
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Amount Currency"
+msgstr "Amount Currency"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Analytic Account"
+msgstr "الحساب التحليلي"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "As representative of"
+msgstr "كممثل ل"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,help:tt_accouting_lib.action_account_pre_payment
+#: model:ir.actions.act_window,help:tt_accouting_lib.action_account_pre_payment_payable
+msgid "Click to register a pre_payment"
+msgstr "Click to register a pre_payment"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_company_id
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,help:tt_accouting_lib.field_financial_document_company_id
+#: model:ir.model.fields,help:tt_accouting_lib.field_financial_document_type_company_id
+msgid "Company related to this journal"
+msgstr "الشركات المرتبطة بهذه اليومية"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:33
+#: code:addons/tt_accouting_lib/models/pre_payment.py:36
+#, python-format
+msgid "Configuration Error !"
+msgstr "Configuration Error !"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_level_balance_report_create_uid
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_create_uid
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_level_balance_report_create_date
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_create_date
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: tt_accouting_lib
+#: selection:financial.document,note_type:0
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Credit"
+msgstr "دائن"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_credit_account
+msgid "Credit Account"
+msgstr "حساب دائن"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.menu,name:tt_accouting_lib.fin_doc_debit_menu
+msgid "Credit Notes"
+msgstr "ملاحظات دائن"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_currency_id
+msgid "Currecy"
+msgstr "العملة"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Currency"
+msgstr "العملة"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_tree
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_credit_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_credit_tree
+msgid "Customer"
+msgstr "العميل"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,name:tt_accouting_lib.action_account_pre_payment
+#: model:ir.ui.menu,name:tt_accouting_lib.menu_action_account_pre_payment_receivable
+msgid "Customer Pre-Payments"
+msgstr "Customer Pre-Payments"
+
+#. module: tt_accouting_lib
+#: selection:financial.document,note_type:0
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Debit"
+msgstr "مدين"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_debit_account
+msgid "Debit Account"
+msgstr "حساب مدين"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.menu,name:tt_accouting_lib.fin_doc_credit_menu
+msgid "Debit Notes"
+msgstr "ملاحظات مدين"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_note_text
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_credit_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_debit_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_level_balance_report_display_name
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_display_name
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_doc_create_date
+msgid "Document Date"
+msgstr "تاريخ المستند"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_name
+msgid "Document Number"
+msgstr "رقم المستند"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_doc_type
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_name
+msgid "Document Type"
+msgstr "نوع الوثيقة"
+
+#. module: tt_accouting_lib
+#: selection:financial.document,state:0
+msgid "Draft"
+msgstr "مبدئي"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:112
+#, python-format
+msgid "Entries are not of the same account!"
+msgstr "Entries are not of the same account!"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.menu,name:tt_accouting_lib.fin_doc_type_menu
+msgid "Financial Docs Types"
+msgstr "أنواع المستندات المالية"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_financial_document
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_credit_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_credit_tree
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_debit_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_debit_tree
+msgid "Financial Document"
+msgstr "المستندات المالية"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_financial_document_type
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_type_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_type_tree
+msgid "Financial Document Type"
+msgstr "أنواع المستندات المالية"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,name:tt_accouting_lib.fin_doc_action_credit
+#: model:ir.actions.act_window,name:tt_accouting_lib.fin_doc_action_debit
+msgid "Financial Documents"
+msgstr "المستندات المالية"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,name:tt_accouting_lib.fin_doc_type_action
+msgid "Financial Documents Types"
+msgstr "أنواع المستندات المالية"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_level_balance_report_id
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_id
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Internal Note"
+msgstr "Internal Note"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_form
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_default_journal_id
+msgid "Journal"
+msgstr "اليومية"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_move_line_id
+msgid "Journal Entry"
+msgstr "قيد يومية"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر يومية"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_form
+msgid "Journal Items"
+msgstr "عناصر اليومية"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Label"
+msgstr "تسمية"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_level_balance_report___last_update
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document___last_update
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_level_balance_report_write_uid
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_write_uid
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_level_balance_report_write_date
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_write_date
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_account_level
+msgid "Level"
+msgstr "مستوى"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,name:tt_accouting_lib.action_level_balance_menu
+#: model:ir.ui.menu,name:tt_accouting_lib.menu_level_Balance_report
+msgid "Level Trial Balance"
+msgstr "مستوي ميزان المراجعة"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_account_level_balance_report
+msgid "Level Trial Balance Report"
+msgstr "تقرير مستوي ميزان المراجعة"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "Money Payment Receipt :"
+msgstr ": ايصال الدفع النقدي"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "Money Receiving Receipt :"
+msgstr ": ايصال الستلم النقدي"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_note_type
+msgid "Note type"
+msgstr "نوع الملاحظة"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_account_parent_id
+msgid "Parent Account"
+msgstr "الحساب الاصلي"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.journal_entry_receipt_document
+msgid "Partner"
+msgstr "شريك"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_partner_id
+msgid "Partner id"
+msgstr "Partner id"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.report.xml,name:tt_accouting_lib.action_payment_receipt_print
+msgid "Payment Receipt Print"
+msgstr "Payment Receipt Print"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_account_payment
+msgid "Payments"
+msgstr "مدفوعات"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/financial_documents.py:54
+#, python-format
+msgid "Please Define Journal for the Document type or define default Journal with name Default Financial Document Journal"
+msgstr " \"Default Financial Document Journal\"الرجاء تحديد جورنال لنوع المستند أو تعريف المجلة الافتراضية باسم "
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/financial_documents.py:118
+#, python-format
+msgid "Please provide correct Amount"
+msgstr "يرجى تقديم المبلغ الصحيح"
+
+#. module: tt_accouting_lib
+#: selection:financial.document,state:0
+msgid "Posted"
+msgstr "نشر"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.excelaccounting_report_view
+#: model:ir.ui.view,arch_db:tt_accouting_lib.exceltrial_report_view
+#: model:ir.ui.view,arch_db:tt_accouting_lib.excelgl_report_view
+msgid "Print Excel"
+msgstr "طباعة إكسيل"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.report.xml,name:tt_accouting_lib.action_journal_entry_print
+msgid "Print Journal Entry"
+msgstr "Print Journal Entry"
+
+#. module: tt_accouting_lib
+#: selection:financial.document,state:0
+msgid "Reconciled"
+msgstr "فرضت عليه"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_form
+msgid "Register pre_payment"
+msgstr "Register pre_payment"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_type_short_code
+msgid "Short Code"
+msgstr "الكود المختصر"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_financial_document_state
+msgid "State"
+msgstr "المحافظة"
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_account_child_ids
+msgid "Sub-Accounts"
+msgstr "الحسابات الفرعية"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:117
+#, python-format
+msgid "The account %s (%s) is not marked as reconciliable !"
+msgstr "The account %s (%s) is not marked as reconciliable !"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:34
+#, python-format
+msgid "The journal %s does not have a sequence, please specify one."
+msgstr "The journal %s does not have a sequence, please specify one."
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:120
+#, python-format
+msgid "The partner has to be the same on all lines for receivable and payable accounts!"
+msgstr "The partner has to be the same on all lines for receivable and payable accounts!"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:36
+#, python-format
+msgid "The sequence of journal %s is deactivated."
+msgstr "The sequence of journal %s is deactivated."
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:110
+#, python-format
+msgid "To reconcile the entries company should be the same for all entries!"
+msgstr "To reconcile the entries company should be the same for all entries!"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:56
+#, python-format
+msgid "Transfer to %s"
+msgstr "Transfer to %s"
+
+#. module: tt_accouting_lib
+#: model:ir.model,name:tt_accouting_lib.model_account_balance_report
+msgid "Trial Balance Report"
+msgstr "تقرير ميزان المراجعة"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_credit_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_debit_form
+msgid "Validate"
+msgstr "تحقق"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_tree
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_debit_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_fin_doc_debit_tree
+msgid "Vendor"
+msgstr "المورّد"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,name:tt_accouting_lib.action_account_pre_payment_payable
+#: model:ir.ui.menu,name:tt_accouting_lib.menu_action_account_pre_payment_payable
+msgid "Vendor Pre-Payments"
+msgstr "Vendor Pre-Payments"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "We"
+msgstr "نحن"
+
+#. module: tt_accouting_lib
+#: code:addons/tt_accouting_lib/models/pre_payment.py:108
+#, python-format
+msgid "You are trying to reconcile some entries that are already reconciled!"
+msgstr "! كنت تحاول التوفيق بين بعض الإدخالات التي تم بالفعل التوفيق"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "as\n"
+"                                payment."
+msgstr "as\n"
+"                                payment."
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "from"
+msgstr "من"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.payment_receipt_print_document
+msgid "hereby acknowledge receiving value of"
+msgstr "نقر باستلام قيمة"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.excelaccounting_report_view
+#: model:ir.ui.view,arch_db:tt_accouting_lib.exceltrial_report_view
+msgid "or"
+msgstr "أو"
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,help:tt_accouting_lib.action_account_pre_payment
+msgid "pre_payment are used to register liquidity movements (send, collect or transfer money).\n"
+"                    You can then process those pre_payment by your own means or by using installed facilities."
+msgstr "pre_payment are used to register liquidity movements (send, collect or transfer money).\n"
+"                    You can then process those pre_payment by your own means or by using installed facilities."
+
+#. module: tt_accouting_lib
+#: model:ir.actions.act_window,help:tt_accouting_lib.action_account_pre_payment_payable
+msgid "pre_payment are used to register liquidity movements (send, collect or transfer money).\n"
+"                    pre_payment are used to register liquidity movements (send, collect or transfer money).\n"
+"                    You can then process those pre_payment by your own means or by using installed facilities."
+msgstr "pre_payment are used to register liquidity movements (send, collect or transfer money).\n"
+"                    pre_payment are used to register liquidity movements (send, collect or transfer money).\n"
+"                    You can then process those pre_payment by your own means or by using installed facilities."
+
+#. module: tt_accouting_lib
+#: model:ir.model.fields,field_description:tt_accouting_lib.field_account_payment_settle
+msgid "settle"
+msgstr "settle"
+
+#. module: tt_accouting_lib
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_pre_payment_form
+#: model:ir.ui.view,arch_db:tt_accouting_lib.view_account_supplier_pre_payment_form
+msgid "settlement"
+msgstr "التسوية"
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="sequence_financial_doc" model="ir.sequence">
+            <field name="name">Financial Document Sequence</field>
+            <field name="code">financial.document.seq</field>
+            <field name="prefix">DOC_NUM_</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field name="padding">4</field>
+        </record>
+
+
+        <record id="fin_docs_misc_journal" model="account.journal">
+            <field name="name">Default Financial Document Journal</field>
+            <field name="code">DFDJ1</field>
+            <field name="type">general</field>
+            <field name="show_on_dashboard" eval="False"/>
+        </record>
+
+
+
+    </data>
+</odoo>
